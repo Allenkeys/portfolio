@@ -36,6 +36,8 @@ body {
 
 .top-level .logo {
   color: var(--primary-color);
+  text-decoration: none;
+  font-weight: var(--bold-font);
 }
 
 .logo span {
@@ -55,7 +57,8 @@ main {
 }
 
 .banner {
-  padding: 114px 24px 114px 24px;
+  width: 100%;
+  padding: 114px 24px 138px 24px;
   background-color: white;
 }
 

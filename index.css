@@ -36,6 +36,8 @@ header {
 
 header .logo {
   color: var(--primary-color);
+  text-decoration: none;
+  font-weight: var(--bold-font);
 }
 
 .logo span {

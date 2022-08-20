@@ -55,7 +55,7 @@ main {
 }
 
 .banner {
-  padding: 114px 24px 138px 24px;
+  padding: 114px 24px 114px 24px;
   background-color: white;
 }
 
@@ -83,11 +83,15 @@ main {
   gap: 20px;
 }
 
+.grid-container {
+  margin: 0 24px;
+}
+
 .skills {
   padding: 16px;
   display: flex;
   flex-direction: column;
-  margin: 0 24px 88px 24px;
+  margin: 0 0 88px 0;
   border: solid 1px #dfe1e6;
   border-radius: 16px;
   background-color: white;
@@ -180,4 +184,25 @@ main {
 
 .about-myself .btn {
   margin-top: 20px;
+}
+
+.about-myself .pro-list {
+  flex-direction: column;
+  gap: 0;
+  text-transform: capitalize;
+  font-weight: var(--medium-font);
+  font-size: 20px;
+}
+
+.pro-list li{
+  padding: 24px 12px;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+li.pro-item::after {
+  content: ">";
+  position: absolute;
+  position: absolute;
+  inset: auto 320px;
+  font-size: 25px;
 }

@@ -200,11 +200,10 @@ main {
 .pro-list li {
   padding: 24px 12px;
   border-bottom: 1px solid #dfe1e6;
+  display: flex;
+  justify-content: space-between;
 }
 
-li.pro-item::after {
-  content: ">";
-  position: absolute;
-  inset: auto 320px;
-  font-size: 25px;
+.pro-item img {
+  max-width: 14px;
 }

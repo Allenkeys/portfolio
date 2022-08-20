@@ -194,14 +194,13 @@ main {
   font-size: 20px;
 }
 
-.pro-list li{
+.pro-list li {
   padding: 24px 12px;
   border-bottom: 1px solid #dfe1e6;
 }
 
 li.pro-item::after {
   content: ">";
-  position: absolute;
   position: absolute;
   inset: auto 320px;
   font-size: 25px;

@@ -199,23 +199,35 @@ main {
   font-size: 20px;
 }
 
-.pro-list li {
+.pro-list .pro-item {
   padding: 24px 12px;
   border-bottom: 1px solid #dfe1e6;
   display: flex;
   justify-content: space-between;
 }
 
-.pro-item img {
-  max-width: 14px;
-}
-
 .pro-item.one {
   border-bottom: none;
-}
-
-.languages {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+li.pro-item.one {
+  padding: 0;
+}
+
+ul.languages {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.languages img {
+  max-width: 100%;
+}
+
+.desc {
+  display: flex;
+  justify-content: space-between;
 }

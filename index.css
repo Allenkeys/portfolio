@@ -52,7 +52,7 @@ main {
   height: calc(100vh - 43px);
   border-bottom-left-radius: 5rem;
   width: 100%;
-  padding: 114px 24px 138px 24px;
+  padding: 80px 24px 138px 24px;
   background-color: white;
 }
 

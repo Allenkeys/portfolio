@@ -57,6 +57,9 @@ main {
 }
 
 .banner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   width: 100%;
   padding: 114px 24px 138px 24px;
   background-color: white;
@@ -69,25 +72,24 @@ main {
 
 .banner .dev {
   font-weight: var(--regular-font);
-  margin-top: 12px;
 }
 
 .banner h4 {
   font-weight: var(--medium-font);
   text-transform: uppercase;
-  margin-top: 12px;
   color: var(--secondary-color);
 }
 
 .banner ul {
   display: flex;
-  margin-top: 12px;
   list-style: none;
   gap: 20px;
 }
 
 .grid-container {
   margin: 0 24px;
+  display: grid;
+  grid-template-columns: 100%;
 }
 
 .skills {
@@ -184,9 +186,9 @@ main {
 .about-myself {
   border-top-right-radius: 5rem;
 }
-
+ 
 .about-myself .btn {
-  margin-top: 20px;
+  align-self: flex-start;
 }
 
 .about-myself .pro-list {
@@ -206,4 +208,14 @@ main {
 
 .pro-item img {
   max-width: 14px;
+}
+
+.pro-item.one {
+  border-bottom: none;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }

@@ -236,12 +236,27 @@ footer {
   background-color: white;
 }
 
+.contact-title {
+  font-size: 40px;
+  font-weight: var(--bold-font);
+  color: white;
+  text-align: center;
+}
+
+.contact-para {
+  font-size: 20px;
+  font-weight: var(--regular-font); 
+  color: #EBEBFF;
+  text-align: center;
+  padding: 12px;
+}
+
 form {
   padding: 103px 24px 45px 24px;
   display: flex;
   flex-direction: column;
   gap: 22px;
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
   border-top-left-radius: 5rem;
   background: var(--secondary-color) url(./images/contact-form-mobile.png) right / contain no-repeat;
 }
@@ -256,16 +271,15 @@ form {
   list-style: none;
 }
 
-
 .form-item {
   width: 100%;
   padding: 16px;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
 }
 
 .form-item.item-text {
   min-height: 170px;
-  min-width: 327px;
-  max-width: 327px;
+  min-width: 100%;
+  max-width: 100%;
 }

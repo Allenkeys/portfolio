@@ -245,8 +245,8 @@ footer {
 
 .contact-para {
   font-size: 20px;
-  font-weight: var(--regular-font); 
-  color: #EBEBFF;
+  font-weight: var(--regular-font);
+  color: #ebebff;
   text-align: center;
   padding: 12px;
 }
@@ -256,7 +256,6 @@ form {
   display: flex;
   flex-direction: column;
   gap: 22px;
-  /* background-color: var(--secondary-color); */
   border-top-left-radius: 5rem;
   background: var(--secondary-color) url(./images/contact-form-mobile.png) right / contain no-repeat;
 }

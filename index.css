@@ -231,3 +231,41 @@ ul.languages {
   display: flex;
   justify-content: space-between;
 }
+
+footer {
+  background-color: white;
+}
+
+form {
+  padding: 103px 24px 45px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  background-color: var(--secondary-color);
+  border-top-left-radius: 5rem;
+  background: var(--secondary-color) url(./images/contact-form-mobile.png) right / contain no-repeat;
+}
+
+.field-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field-list li {
+  list-style: none;
+}
+
+
+.form-item {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+}
+
+.form-item.item-text {
+  min-height: 170px;
+  min-width: 327px;
+  max-width: 327px;
+}

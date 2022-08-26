@@ -39,6 +39,26 @@ body {
   background-color: white;
 }
 
+.logo {
+  animation: rotate 3s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(0.75);
+  }
+
+  25% {
+    transform: rotate(0deg) scale(1.2);
+    width: 150%;
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+    width: 100%;
+  }
+}
+
 .top-level .logo {
   color: var(--primary-color);
   text-decoration: none;
@@ -86,6 +106,21 @@ main {
   background: white url(./images/mobile-bg.png) center/contain no-repeat;
   border-bottom-left-radius: 5rem;
   margin-bottom: 114px;
+}
+
+.cta {
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0, -10px);
+  }
+}
+
+.cta a {
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 
 .banner {
@@ -202,6 +237,7 @@ main {
   border-radius: 8px;
   margin-bottom: 20px;
   cursor: pointer;
+  transition: 0.25s ease-in;
 }
 
 .btn:hover {
@@ -302,6 +338,11 @@ footer {
   color: #ebebff;
   text-align: center;
   padding: 12px;
+  transition: 0.25s ease-in;
+}
+
+.contact-para:hover {
+  transform: translateY(-20px);
 }
 
 form {
@@ -334,6 +375,10 @@ form {
   min-height: 170px;
   min-width: 100%;
   max-width: 100%;
+}
+
+.form-btn:hover {
+  border: 1px solid white;
 }
 
 @media screen and (min-width: 768px) {

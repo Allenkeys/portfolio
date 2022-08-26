@@ -44,14 +44,16 @@ body {
 }
 
 @keyframes rotate {
-  0%{
-    transform: rotate(0deg) scale(.75);
+  0% {
+    transform: rotate(0deg) scale(0.75);
   }
-  25%{
+
+  25% {
     transform: rotate(0deg) scale(1.2);
     width: 150%;
   }
-  100%{
+
+  100% {
     transform: rotate(360deg) scale(1);
     width: 100%;
   }
@@ -107,13 +109,18 @@ main {
 }
 
 .cta {
-  animation: bounce 1s infinite alternate ;
+  animation: bounce 1s infinite alternate;
 }
 
 @keyframes bounce {
   0% {
     transform: translate(0, -10px);
   }
+}
+
+.cta a {
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 
 .banner {
@@ -336,7 +343,7 @@ footer {
 
 .contact-para:hover {
   transform: translateY(-20px);
-} 
+}
 
 form {
   padding: 103px 24px 45px 24px;

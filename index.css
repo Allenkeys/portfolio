@@ -230,6 +230,7 @@ main {
   border-radius: 8px;
   margin-bottom: 20px;
   cursor: pointer;
+  transition: 0.25s ease-in;
 }
 
 .btn:hover {
@@ -330,7 +331,12 @@ footer {
   color: #ebebff;
   text-align: center;
   padding: 12px;
+  transition: 0.25s ease-in;
 }
+
+.contact-para:hover {
+  transform: translateY(-20px);
+} 
 
 form {
   padding: 103px 24px 45px 24px;

@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://allenkeys.github.io/portfolio/)
 
 
 ## Getting Started
@@ -36,8 +36,11 @@ To get a local copy up and running follow these simple example steps.
 ### Run tests
   - Github actions and local linters test
 ### Deployment
-
-
+  - Create a new repository
+  - On GitHub, navigate to your site's repository.
+  - Under your repository name, click  Settings.
+  - In the "Code and automation" section of the sidebar, click  Pages.
+  - Under the branch section,select the "main" branch from the dropdown and click "Save".
 
 ## Authors
 
@@ -52,5 +55,3 @@ To get a local copy up and running follow these simple example steps.
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._

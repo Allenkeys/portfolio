@@ -357,6 +357,7 @@ form {
 .field-list {
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
   gap: 16px;
 }
 
@@ -379,6 +380,12 @@ form {
 
 .form-btn:hover {
   border: 1px solid white;
+}
+
+label {
+  visibility: collapse;
+  height: 0;
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
@@ -505,4 +512,5 @@ form {
     min-width: 447px;
     max-width: 447px;
   }
+
 }

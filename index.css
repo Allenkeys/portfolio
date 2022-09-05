@@ -357,7 +357,6 @@ form {
 .field-list {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   gap: 16px;
 }
 
@@ -512,5 +511,4 @@ label {
     min-width: 447px;
     max-width: 447px;
   }
-
 }

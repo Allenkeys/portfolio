@@ -31,6 +31,10 @@ body {
   font-size: var(--regular-font-size);
 }
 
+.lock-scroll {
+  overflow: hidden;
+}
+
 /* Header logo and navbar */
 .top-level {
   display: flex;
@@ -38,7 +42,6 @@ body {
   justify-content: space-between;
   background-color: white;
   transition: 0.35s ease-in-out;
-
 }
 
 .logo {
@@ -95,8 +98,8 @@ body {
   font-size: 32px;
   opacity: 1;
   font-weight: var(--semi-bold-font);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(10px);
   mix-blend-mode: multiply;
 }
 
@@ -118,26 +121,31 @@ body {
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
-    height: fit-content;
+    height: 32px;
   }
 
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
     background-color: white;
+    position: fixed;
   }
+
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
+
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-5px) rotate(-45deg);
     background-color: white;
+    position: fixed;
   }
 
   .nav-link-container .nav-link a {
     color: white;
-    transition: .15s;
+    transition: 0.15s;
     opacity: 0;
   }
+
   .nav-link-container.active .nav-link a {
     opacity: 1;
   }
@@ -149,13 +157,12 @@ body {
     position: fixed;
     opacity: 0;
     height: 100vh;
-    top: 0px;
+    top: 0;
     left: -100%;
     padding: 100px 25px;
     color: white;
     transition: 0.25s ease-in-out;
   }
-
 }
 
 .nav-link-container li {

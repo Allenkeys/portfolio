@@ -108,19 +108,15 @@ function getSpecificModal() {
 
   for (let i = 0; i < projectBtns.length; i += 1) {
     projectBtns[i].addEventListener('click', () => {
-      allProjectModal[i].classList.toggle('active');
-			portfolio.appendChild(allProjectModal[i]);
+      allProjectModal[i].classList.add('active');
+      portfolio.appendChild(allProjectModal[i]);
 
-      // if (allProjectModal) {
-        const close = document.querySelector('.modal-close');
-        close.addEventListener('click', () => {
-          close.parentElement.parentElement.parentElement.remove();
+      const close = document.querySelectorAll('.modal-close');
+      close.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          btn.parentElement.parentElement.parentElement.classList.remove('active');
         });
-
-				// close.parentElement.parentElement.parentElement.addEventListener('click', (e) => {
-				// 	// e.target.style.display = 'none';
-				// })
-      // }
+      });
     });
   }
 }

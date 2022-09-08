@@ -1,0 +1,67 @@
+.btn.mod {
+	display: flex;
+	gap: 12px;
+}
+
+.btnflex {
+	margin-top: 20px;
+	display: flex;
+	gap: 12px;
+}
+
+.rule {
+	background-color: lightgrey;
+	height: 1px;
+}
+
+.skills.mod-container {
+	flex-direction: column;
+	gap: 10px;
+  width: 100%;
+  height: 100%;
+	/* transition: 0.2s ease-in-out; */
+
+}
+
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    padding: 10% 5.5%;
+    background-color: rgb(193 199 208 / 0.50);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 100vw;
+    min-height: 100vh;
+		transition: 0.35s ease-in-out;
+    visibility: hidden;
+}
+
+.modal-wrapper.active {
+    visibility: visible;
+}
+
+.sample.mod {
+	max-width: 100%;
+}
+
+.modal-close {
+	float: right;
+	font-size: 25px;
+	color:#67798E;
+	position: relative;
+	z-index: 20;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-wrapper {
+			height: 100vh;
+			padding: 5.5% 10%;
+    }
+
+    .sample.mod {
+      max-height: 50%;
+    }
+}

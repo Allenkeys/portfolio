@@ -449,6 +449,10 @@ form {
 .form-item:focus {
   outline: 2px solid var(--pale-secondary-bg);
 }
+/* 
+.input-wrap.error {
+  /* position: relative; 
+} */
 
 .input-wrap.error .form-item {
   outline: 2px solid #e74c3c;
@@ -459,15 +463,18 @@ form {
 }
 
 .input-wrap small {
-  visibility: hidden;
+  display: block;
 }
 
-.input-wrap.error small {
-  visibility: visible;
+.input-wrap.success small {
   color: #e74c3c;
   margin-top: 5px;
   margin-bottom: -12px;
   display: block;
+  width: 100%;
+  background-color: white;
+  border-radius: 4px;
+  padding: 5px 15px;
 }
 
 .form-item.item-text {

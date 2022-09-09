@@ -37,7 +37,7 @@ function setSuccess(input) {
 
 function setError(input, message) {
   const inputWrapper = input.parentElement;
-  const small = inputWrapper.querySelector('small');
+  const small = document.querySelector('small');
   inputWrapper.classList.add('error');
   small.innerText = message;
 }
@@ -52,7 +52,7 @@ function validateInput() {
     setSuccess(email);
     isFalse = true;
   }
-  setError(email, 'Invalid email');
+  setError(email, 'Invalid email... Try lowercase');
 
   if (fnameValue === '') {
     setError(fname, 'Full name cannot be blank');

@@ -445,8 +445,6 @@ form {
   padding: 16px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  display: flex;
-  flex-direction: column;
 }
 
 .form-item:focus {

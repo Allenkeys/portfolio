@@ -32,13 +32,13 @@ navLinks.forEach((navLink) => {
 
 function setSuccess(input) {
   const inputWrapper = input.parentElement;
-  inputWrapper.classList.toggle('success');
+  inputWrapper.classList.add('success');
 }
 
 function setError(input, message) {
   const inputWrapper = input.parentElement;
   const small = inputWrapper.querySelector('small');
-  inputWrapper.classList.toggle('error');
+  inputWrapper.classList.add('error');
   small.innerText = message;
 }
 
@@ -49,8 +49,6 @@ function validateInput() {
 
   if (/^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g.test(emailValue)) {
     setSuccess(email);
-    form.submit();
-    form.reset();
   } else {
     setError(email, 'Invalid email');
   }
@@ -69,6 +67,5 @@ function validateInput() {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-
   validateInput();
 });

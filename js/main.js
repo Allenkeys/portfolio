@@ -32,13 +32,13 @@ navLinks.forEach((navLink) => {
 
 function setSuccess(input) {
   const inputWrapper = input.parentElement;
-  inputWrapper.classList.toggle('success');
+  inputWrapper.classList.add('success');
 }
 
 function setError(input, message) {
   const inputWrapper = input.parentElement;
   const small = inputWrapper.querySelector('small');
-  inputWrapper.classList.toggle('error');
+  inputWrapper.classList.add('error');
   small.innerText = message;
 }
 
@@ -46,13 +46,13 @@ function validateInput() {
   const emailValue = email.value.trim();
   const fnameValue = fname.value.trim();
   const messageValue = message.value.trim();
+  let isFalse = false;
 
   if (/^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g.test(emailValue)) {
     setSuccess(email);
-    form.submit();
-  } else {
-    setError(email, 'Invalid email');
+    isFalse = true;
   }
+  setError(email, 'Invalid email');
 
   if (fnameValue === '') {
     setError(fname, 'Full name cannot be blank');
@@ -60,14 +60,18 @@ function validateInput() {
     setSuccess(fname);
   }
   if (messageValue === '') {
-    setError(message, 'MessageCre cannot be blank');
+    setError(message, 'Message cannot be blank');
   } else {
     setSuccess(message);
   }
+
+  return isFalse;
 }
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-
-  validateInput();
+  if (validateInput()) {
+    form.submit();
+    form.reset();
+  }
 });

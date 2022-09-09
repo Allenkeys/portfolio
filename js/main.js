@@ -7,7 +7,7 @@ const body = document.querySelector('body');
 // form validation
 const form = document.getElementById('contact');
 const email = document.getElementById('email');
-const fullName = document.getElementById('fname');
+const fname = document.getElementById('fname');
 const message = document.getElementById('message');
 
 function activate() {
@@ -54,16 +54,16 @@ function validateInput() {
     setError(email, 'Invalid email');
   }
 
-  if(fnameValue === '') {
-		setError(fname, 'Full name cannot be blank');
-	} else {
-		setSuccess(fname);
-	}
-  if(messageValue === '') {
-		setError(message, 'Message cannot be blank');
-	} else {
-		setSuccess(message);
-	}
+  if (fnameValue === '') {
+    setError(fname, 'Full name cannot be blank');
+  } else {
+    setSuccess(fname);
+  }
+  if (messageValue === '') {
+    setError(message, 'MessageCre cannot be blank');
+  } else {
+    setSuccess(message);
+  }
 }
 
 form.addEventListener('submit', (e) => {

@@ -451,15 +451,15 @@ form {
 }
 
 .input-wrap.error .form-item {
-	outline: 2px solid #e74c3c;
+  outline: 2px solid #e74c3c;
 }
 
 .input-wrap.success .form-item {
-	outline:  2px solid #2ecc71 ;
-};
+  outline: 2px solid #2ecc71;
+}
 
 .input-wrap small {
-	visibility: hidden;
+  visibility: hidden;
 }
 
 .input-wrap.error small {
@@ -467,7 +467,6 @@ form {
   color: #e74c3c;
   margin-top: 5px;
   margin-bottom: -12px;
-  text-shadow: white;
   display: block;
 }
 

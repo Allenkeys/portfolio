@@ -449,10 +449,6 @@ form {
 .form-item:focus {
   outline: 2px solid var(--pale-secondary-bg);
 }
-/* 
-.input-wrap.error {
-  /* position: relative; 
-} */
 
 .input-wrap.error .form-item {
   outline: 2px solid #e74c3c;

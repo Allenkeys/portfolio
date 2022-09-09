@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -27,7 +27,7 @@ html {
 body {
   color: var(--primary-color);
   background-color: var(--bg-color);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: var(--regular-font-size);
 }
 
@@ -94,12 +94,12 @@ body {
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: var(--secondary-color);
+  background-color: rgba(97, 110, 252, 0.96);
   font-size: 32px;
   opacity: 1;
   font-weight: var(--semi-bold-font);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(8px);
   mix-blend-mode: multiply;
 }
 
@@ -177,7 +177,7 @@ body {
 /* banner main section */
 
 main {
-  background: white url(./images/mobile-bg.png) center/contain no-repeat;
+  background: white url(../images/mobile-bg.png) center/contain no-repeat;
   border-bottom-left-radius: 5rem;
   margin-bottom: 114px;
 }
@@ -247,6 +247,7 @@ main {
   max-width: 100%;
 }
 
+.modal-header h2,
 .project-header h2 {
   font-weight: var(--bold-font);
   font-size: 32px;
@@ -425,7 +426,7 @@ form {
   flex-direction: column;
   gap: 22px;
   border-top-left-radius: 5rem;
-  background: var(--secondary-color) url(./images/contact-form-mobile.png) right / contain no-repeat;
+  background: var(--secondary-color) url(../images/contact-form-mobile.png) right / contain no-repeat;
 }
 
 .field-list {
@@ -466,7 +467,7 @@ label {
     padding: 24px 11%;
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: 3;
     box-shadow: 0 4px 20px #ebebff;
     margin-bottom: 50px;
   }
@@ -478,7 +479,7 @@ label {
   }
 
   main {
-    background: white url(./images/Header-desktop-bg.png) center center/contain no-repeat;
+    background: white url(../images/Header-desktop-bg.png) center center/contain no-repeat;
   }
 
   .top-level img {
@@ -523,6 +524,7 @@ label {
     max-width: 50%;
   }
 
+  .modal-header h2,
   .project-header h2 {
     font-weight: var(--bold-font);
     font-size: 40px;
@@ -568,7 +570,7 @@ label {
 
   form {
     padding: 143px 24px 127px 24px;
-    background: var(--secondary-color) url(./images/contact-desktop-bg.png) right / contain no-repeat;
+    background: var(--secondary-color) url(../images/contact-desktop-bg.png) right / contain no-repeat;
   }
 
   .field-list {

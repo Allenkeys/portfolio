@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -27,7 +27,7 @@ html {
 body {
   color: var(--primary-color);
   background-color: var(--bg-color);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: var(--regular-font-size);
 }
 
@@ -426,7 +426,8 @@ form {
   flex-direction: column;
   gap: 22px;
   border-top-left-radius: 5rem;
-  background: var(--secondary-color) url(../images/contact-form-mobile.png) right / contain no-repeat;
+  background: var(--secondary-color) url(../images/contact-form-mobile.png)
+    right / contain no-repeat;
 }
 
 .field-list {
@@ -503,7 +504,8 @@ label {
   }
 
   main {
-    background: white url(../images/Header-desktop-bg.png) center center/contain no-repeat;
+    background: white url(../images/Header-desktop-bg.png) center center/contain
+      no-repeat;
   }
 
   .top-level img {
@@ -594,7 +596,8 @@ label {
 
   form {
     padding: 143px 24px 127px 24px;
-    background: var(--secondary-color) url(../images/contact-desktop-bg.png) right / contain no-repeat;
+    background: var(--secondary-color) url(../images/contact-desktop-bg.png)
+      right / contain no-repeat;
   }
 
   .field-list {

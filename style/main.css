@@ -426,8 +426,7 @@ form {
   flex-direction: column;
   gap: 22px;
   border-top-left-radius: 5rem;
-  background: var(--secondary-color) url(../images/contact-form-mobile.png)
-    right / contain no-repeat;
+  background: var(--secondary-color) url(../images/contact-form-mobile.png) right / contain no-repeat;
 }
 
 .field-list {
@@ -504,8 +503,7 @@ label {
   }
 
   main {
-    background: white url(../images/Header-desktop-bg.png) center center/contain
-      no-repeat;
+    background: white url(../images/Header-desktop-bg.png) center center/contain no-repeat;
   }
 
   .top-level img {
@@ -596,8 +594,7 @@ label {
 
   form {
     padding: 143px 24px 127px 24px;
-    background: var(--secondary-color) url(../images/contact-desktop-bg.png)
-      right / contain no-repeat;
+    background: var(--secondary-color) url(../images/contact-desktop-bg.png) right / contain no-repeat;
   }
 
   .field-list {

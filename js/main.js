@@ -4,6 +4,11 @@ const toolBar = document.querySelector('.top-level');
 const navLinks = document.querySelectorAll('.nav-link');
 const logo = document.querySelector('.logo');
 const body = document.querySelector('body');
+// form validation
+const form = document.getElementById('contact');
+const email = document.getElementById('email');
+const fullName = document.getElementById('fname');
+const message = document.getElementById('message');
 
 function activate() {
   hamburger.classList.toggle('active');
@@ -21,4 +26,48 @@ navLinks.forEach((navLink) => {
   navLink.addEventListener('click', () => {
     activate();
   });
+});
+
+// form validity check
+
+function setSuccess(input) {
+  const inputWrapper = input.parentElement;
+  inputWrapper.classList.toggle('success');
+}
+
+function setError(input, message) {
+  const inputWrapper = input.parentElement;
+  const small = inputWrapper.querySelector('small');
+  inputWrapper.classList.toggle('error');
+  small.innerText = message;
+}
+
+function validateInput() {
+  const emailValue = email.value.trim();
+  const fnameValue = fname.value.trim();
+  const messageValue = message.value.trim();
+
+  if (/^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g.test(emailValue)) {
+    setSuccess(email);
+    form.submit();
+  } else {
+    setError(email, 'Invalid email');
+  }
+
+  if(fnameValue === '') {
+		setError(fname, 'Full name cannot be blank');
+	} else {
+		setSuccess(fname);
+	}
+  if(messageValue === '') {
+		setError(message, 'Message cannot be blank');
+	} else {
+		setSuccess(message);
+	}
+}
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  validateInput();
 });

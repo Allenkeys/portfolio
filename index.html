@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/popup-modal.css">
+    <link rel="stylesheet" href="test.css">
     <title>Joshua Eze Portfolio</title>
 </head>
 <body>
@@ -96,17 +97,20 @@
             <h2 class="contact-title">Contact me</h2>
             <p class="contact-para">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it </p>
             <ul class="field-list">
-                <li>
+                <li class="input-wrap">
                     <label for="fname">Full name</label>
                     <input id="fname" class="form-item" name="Full-Name" type="text" maxlength="30" placeholder="John Doe" required>
+                    <small></small>
                 </li>
-                <li >
+                <li class="input-wrap">
                     <label for="email">email</label>
                     <input id="email" class="form-item" name="email" type="email" placeholder="example@youremail.com" required>
+                    <small></small>
                 </li>
-                <li>
+                <li class="input-wrap">
                     <label for="message">message</label>
                     <textarea id="message" class="form-item item-text" placeholder="Write your message here..." name="message" maxlength="500" required></textarea>
+                    <small></small>
                 </li>
                 <li >
                     <button class="btn form-btn" type="submit">Get In Touch</button>

@@ -31,10 +31,6 @@ body {
   font-size: var(--regular-font-size);
 }
 
-.lock-scroll {
-  overflow: hidden;
-}
-
 /* Header logo and navbar */
 .top-level {
   display: flex;
@@ -74,11 +70,6 @@ body {
   color: var(--secondary-color);
 }
 
-.logo.active {
-  position: relative;
-  z-index: -2;
-}
-
 .top-level img {
   height: 12px;
   align-self: center;
@@ -88,19 +79,6 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 24px;
-}
-
-.nav-link-container.active {
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(97, 110, 252, 0.96);
-  font-size: 32px;
-  opacity: 1;
-  font-weight: var(--semi-bold-font);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(8px);
-  mix-blend-mode: multiply;
 }
 
 .hamburger {
@@ -124,6 +102,15 @@ body {
     height: 32px;
   }
 
+  .lock-scroll {
+    overflow: hidden;
+  }
+
+  .logo.active {
+    position: relative;
+    z-index: -2;
+  }
+
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
     background-color: white;
@@ -138,6 +125,19 @@ body {
     transform: translateY(-5px) rotate(-45deg);
     background-color: white;
     position: fixed;
+  }
+
+  .nav-link-container.active {
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(97, 110, 252, 0.96);
+    font-size: 32px;
+    opacity: 1;
+    font-weight: var(--semi-bold-font);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(8px);
+    mix-blend-mode: multiply;
   }
 
   .nav-link-container .nav-link a {
@@ -444,6 +444,31 @@ form {
   padding: 16px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
+}
+
+.form-item:focus {
+  outline: 2px solid var(--pale-secondary-bg);
+}
+
+.input-wrap.error .form-item {
+	outline: 2px solid #e74c3c;
+}
+
+.input-wrap.success .form-item {
+	outline:  2px solid #2ecc71 ;
+};
+
+.input-wrap small {
+	visibility: hidden;
+}
+
+.input-wrap.error small {
+  visibility: visible;
+  color: #e74c3c;
+  margin-top: 5px;
+  margin-bottom: -12px;
+  text-shadow: white;
+  display: block;
 }
 
 .form-item.item-text {

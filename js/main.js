@@ -70,8 +70,5 @@ function validateInput() {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  if (validateInput()) {
-    form.submit();
-    form.reset();
-  }
+  validateInput()
 });

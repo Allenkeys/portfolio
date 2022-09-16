@@ -177,7 +177,7 @@ body {
 /* banner main section */
 
 main {
-  background: white url(../images/mobile-bg.png) center/contain no-repeat;
+  background: white url(../images/mobile-bg.png) center/cover no-repeat;
   border-bottom-left-radius: 5rem;
   margin-bottom: 114px;
 }

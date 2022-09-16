@@ -1,7 +1,7 @@
 const projects = [
   {
     name: 'Tonic',
-    image: '../images/Snapshoot1.png',
+    image: './images/Snapshoot1.png',
     tags: ['CANOPY', 'Back End Dev', '2015'],
     live: '#',
     repository: 'https://github.com/Allenkeys/portfolio',
@@ -10,7 +10,7 @@ const projects = [
   },
   {
     name: 'uber navigation',
-    image: '../images/Snapshoot2.png',
+    image: './images/Snapshoot2.png',
     tags: ['CANOPY', 'Back End Dev', '2015'],
     see: '#',
     repository: 'https://github.com/Allenkeys/portfolio',
@@ -19,7 +19,7 @@ const projects = [
   },
   {
     name: 'facebook 360',
-    image: '../images/Snapshoot3.png',
+    image: './images/Snapshoot3.png',
     tags: ['CANOPY', 'Back End Dev', '2015'],
     live: 'https://nedramrez.github.io/portfolio',
     repository: 'https://github.com/Allenkeys/portfolio',
@@ -28,7 +28,7 @@ const projects = [
   },
   {
     name: 'multi-post stories',
-    image: '../images/Snapshoot4.png',
+    image: './images/Snapshoot4.png',
     tags: ['CANOPY', 'Back End Dev', '2015'],
     live: '#',
     repository: 'https://github.com/Allenkeys/portfolio',

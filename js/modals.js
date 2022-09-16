@@ -92,8 +92,8 @@ function getProjectModal() {
 </ul>
 <div class="rule"></div>
 <div class="btnflex">
-<button class="btn mod" type="submit">see live<img src="../images/livecon.png" alt="check live version"></button>
-<button class="btn mod" type="submit">see source<img src="../images/giticon.png" alt="check live version"></button
+<button class="btn mod" type="submit">see live<img src="./images/livecon.png" alt="check live version"></button>
+<button class="btn mod" type="submit">see source<img src="./images/giticon.png" alt="check live version"></button
 </div>
 </header>
 </div>`;

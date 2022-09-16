@@ -18,7 +18,6 @@
   flex-direction: column;
   gap: 10px;
   width: 100%;
-  height: 120%;
   transition: 0.2s ease-in-out;
 }
 
